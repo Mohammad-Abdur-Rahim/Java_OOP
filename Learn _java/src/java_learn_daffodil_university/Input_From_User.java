@@ -3,12 +3,11 @@ import java.util.Scanner;
 
 public class Input_From_User {
     public static void main(String[] args) {
-        int number;
-        Scanner input = new Scanner(System.in); //input use Scanner this line with variable.1st steap
+  String name;
+  Scanner input=new Scanner(System.in);   //1st steap Scanner declare
 
-
-        System.out.print("Enter any number:");
-        number=input.nextInt();                 //2nd steap decalre the scanner vale store
-        System.out.println("number is ="+number);
+        System.out.println("Enter your name:");
+        name=input.nextLine();             // 2nd steap user value declare
+        System.out.println("Name Is:"+name);  // string = next() vs nextline()................important
     }
 }
