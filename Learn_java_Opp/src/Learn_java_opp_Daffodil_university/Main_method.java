@@ -7,10 +7,13 @@ public class Main_method {
         teacher1.name="Md Abdur Rahim";
         teacher1.gender="Male";
         teacher1.age=21;
-        
-        System.out.println("Name:"+teacher1.name);
-        System.out.println("Gender:"+teacher1.gender);
-        System.out.println("Age:"+teacher1.age);
+        teacher1.display(); // Methos Declare with object. here......
+
+        Teacher teacher2=new Teacher(); // object create Teacher class
+        teacher2.name=" Ms Fatema";
+        teacher2.gender="Female";
+        teacher2.age=18;
+        teacher2.display(); // Methos Declare with object. here......
 
 
 
