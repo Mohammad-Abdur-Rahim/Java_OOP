@@ -12,7 +12,7 @@ public class Employee {
     }
     void info(){
         System.out.println("Id:"+id);
-        System.out.println("Id:"+ Name);
+        System.out.println("Name:"+ Name);
     }
 
 }
