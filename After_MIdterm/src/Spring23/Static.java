@@ -1,6 +1,11 @@
 package Spring23;
 
 public class Static {
-
-    static String UniversityName="Daffodil International University";
+  int count=0;
+    Static(){
+        count++;
+    }
+    void display(){
+        System.out.println("Total object : "+count);
+    }
 }
