@@ -1,22 +1,15 @@
 package Learn_java_opp_Daffodil_university;
 
 public class StaticBlock {
-    static String name;
-    static int id;
+
 
 
     static {                    //Static block here
-        name="md abdur rahim";
-        id=221-15-5915;
+        System.out.println("This Static block 1st Execute");
     }
 
-
-    static void display(){
-        System.out.println("Name is :"+name);
-        System.out.println("Id is :"+id);
-    }
 
     public static void main(String[] args) {
-        StaticBlock.display();
+        System.out.println("This Main FN 2nd Execute");
     }
 }
