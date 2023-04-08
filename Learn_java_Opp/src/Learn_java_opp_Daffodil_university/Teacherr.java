@@ -2,23 +2,29 @@ package Learn_java_opp_Daffodil_university;
 
 public class Teacherr extends PersonR{
 
-    String qualifiaction;
+   private String qualifiaction;
 
-    void display1(){
-        System.out.println("Name : "+name);
-        System.out.println("Age : "+id);
-        System.out.println("Qualification : "+qualifiaction);
+    public void setQualifiaction(String qualifiaction) {
+        this.qualifiaction = qualifiaction;
     }
-    public static void main(String[] args) {
-        PersonR ob = new PersonR();
-        ob.name="Rahim";
-        ob.id=5915;
-        ob.display();
 
-        Teacherr ob1 =new Teacherr();
-        ob1.name="ms bithi mam";
-        ob1.id=999;
-        ob1.qualifiaction="Master in CSE";
-        ob1.display1();
+    public String getQualifiaction() {
+        return qualifiaction;
+    }
+    void display(){                            // void method function here
+        System.out.println("Name : "+getName());
+        System.out.println("Age : "+getId());
+        System.out.println("Qualifiacation:"+getQualifiaction());
+
+    }
+
+    public static void main(String[] args) {   // declare all vale
+       Teacherr obj= new Teacherr();
+       obj.setName("MD ABDUR RAHIM");
+       obj.setId(5915);
+       obj.display();
+       obj.setQualifiaction("MSC IN CSE");
+
+
     }
 }

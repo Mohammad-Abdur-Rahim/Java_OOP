@@ -1,10 +1,24 @@
 package Learn_java_opp_Daffodil_university;
 
 public class PersonR {
-    String name;
-    int id;
-    void display(){
-        System.out.println("Name : "+name);
-        System.out.println("Age : "+id);
+    private String name;
+    private int id;
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
     }
 }
+
