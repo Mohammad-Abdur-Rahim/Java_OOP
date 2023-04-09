@@ -7,7 +7,7 @@ public class Exception_Demo {
             int result= x / y;
             System.out.println(+result);
 
-        }catch (ArithmeticException e){
+        }catch (Exception e){
 
             System.out.println("ArithmeticException"+e);
         }
