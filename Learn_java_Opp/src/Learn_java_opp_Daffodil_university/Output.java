@@ -12,6 +12,7 @@ public class Output {
         catch(ArithmeticException e)
         {
             System.out.printf("2");
+            System.exit(0);  // programe execude this line end
         }
         finally
         {
