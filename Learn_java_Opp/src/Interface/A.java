@@ -1,5 +1,5 @@
 package Interface;
 
 public interface A {
-    void play();
+    void play1();
 }
