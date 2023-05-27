@@ -1,17 +1,19 @@
-public class Myclass implements AA {
-    public void meth1() {
-        System.out.println("Implementing meth1() in MyClass");
+public class Myclass implements AA,BB {
+    public void methodAA() {
+        System.out.println("Implementing methodA() from interface A");
     }
 
     @Override
-    public void meth2() {
-        System.out.println("Implementing meth2() in MyClass");
+    public void methodBB() {
+        System.out.println("Implementing methodB() from interface B");
     }
 
     public static void main(String[] args) {
         Myclass myObject = new Myclass();
-        myObject.meth1();
-        myObject.meth2();
+        myObject.methodAA();
+        myObject.methodBB();
     }
 }
+
+
 

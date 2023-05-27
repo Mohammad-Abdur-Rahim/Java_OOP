@@ -1,5 +1,3 @@
 interface   AA {
-    void meth1();
-
-    void meth2();
+void methodAA();
 }
