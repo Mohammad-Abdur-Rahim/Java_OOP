@@ -1,16 +1,20 @@
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 public class TryCatch {
 
     public static void main(String[] args) {
-        int arraySize = -5; // Negative array size
-
         try {
-            int[] array = new int[arraySize]; //  create an array with negative size
-            System.out.println("Array created successfully.");
-        } catch (NegativeArraySizeException e) {
-            System.out.println("Error: Negative array size!");
-        } finally {
-            System.out.println("Finally block executed.");
+            readFromFile("file.txt");
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found: " + e.getMessage());
         }
+    }
+
+    public static void readFromFile(String filename) throws FileNotFoundException {
+        FileReader fileReader = new FileReader(filename);
+        // Code to read from the file
+        // ...
     }
 }
 
